@@ -86,3 +86,16 @@ skill 家族前缀。WKJ-Human 与 PAI 无代码或文本关联。
   2026-05，早于设计时间；后续该 skill 有更新）。本文按“当时安装版本”如实说明。
 - 如任何权利人认为本项目存在不当使用，请通过 Issue 联系，我们会尽快处理
   （补充署名、移除内容或调整许可）。
+
+## License 注记
+
+> 2026-09-29 自 LICENSE 文件迁入。原注记追加在 LICENSE 尾部，导致 GitHub 将许可
+> 识别为 NOASSERTION；迁出后 LICENSE 恢复为标准 MIT 全文。以下为原注记，一字未改：
+
+Note on third-party ideas: this project's design draws on concepts from
+several open-source skills. Their licenses and the exact boundary between
+inspiration and original content are documented in SOURCES.md, which is part
+of this project's license documentation. In particular, principle phrasing
+related to renwei-writing is used under its Free License for open-source
+projects; closed-source commercial use of this project may create obligations
+toward that author. See SOURCES.md for details.

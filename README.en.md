@@ -157,6 +157,7 @@ That is what open source is for: every layer of improvement stands on thinking s
 ## Contact
 
 - X (Twitter): [@JiafuWang](https://x.com/JiafuWang)
+- Email：[keji.dev@outlook.com](mailto:keji.dev@outlook.com)
 - For questions and suggestions, please prefer [opening an issue](https://github.com/Keji-Wang/wkj-human/issues)
 
 ## License

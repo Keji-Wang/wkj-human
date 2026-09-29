@@ -113,6 +113,11 @@ WKJ-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/op
 - 长文（万字级）下的检查密度未充分验证。
 - 本 skill 按 “as-is” 释出，不承诺支持响应时效，Issue 会看但不保证修复节奏。
 
+## 联系
+
+- X（Twitter）：[@JiafuWang](https://x.com/JiafuWang)
+- 问题与建议优先走 [Issue](https://github.com/Keji-Wang/wkj-human/issues)
+
 ## License
 
 MIT，见 [LICENSE](LICENSE)。第三方理念的许可边界见 [SOURCES.md](SOURCES.md)。

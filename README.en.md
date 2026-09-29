@@ -107,6 +107,11 @@ WKJ-Human is not presented as fully original: it synthesizes ideas from three op
 - Check density on very long documents (10k+ characters) is not yet validated.
 - Released as-is; issues are read but response times are not guaranteed.
 
+## Contact
+
+- X (Twitter): [@JiafuWang](https://x.com/JiafuWang)
+- For questions and suggestions, please prefer [opening an issue](https://github.com/Keji-Wang/wkj-human/issues)
+
 ## License
 
 MIT — see [LICENSE](LICENSE). Third-party idea licensing boundaries are documented in [SOURCES.md](SOURCES.md).

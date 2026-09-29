@@ -1,6 +1,12 @@
 # CHANGELOG
 
-本仓库从 CORE-Human 私有主源整理而来。私有版本的迭代历史如下，公开版从 v0.3.0 起独立记版本。
+本仓库从 WKJ-Human 的私有主源整理而来。私有版本的迭代历史如下，公开版从 v0.3.0 起独立记版本。
+
+## v0.3.1 (2026-09-29) — 更名与双语
+
+- **项目更名：CORE-Human → WKJ-Human**，对齐作者的 skill 家族前缀命名；GitHub 仓库同步更名为 `wkj-human`。v0.1 / v0.2 私有历史版本当时名为 CORE-Human。
+- README 提供中英双语版本（[README.md](README.md) 中文 / [README.en.md](README.en.md) English）。
+- 文末新增对上游作者的致敬致谢（完整来源核实见 [SOURCES.md](SOURCES.md)）。
 
 ## v0.3.0 (2026-09-29) — 首个公开版
 

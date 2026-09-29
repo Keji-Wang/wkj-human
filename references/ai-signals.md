@@ -1,4 +1,4 @@
-# CORE-Human AI 信号库
+# WKJ-Human AI 信号库
 
 这份文件用于辅助判断“哪里像 AI”，不是机械打分表。
 

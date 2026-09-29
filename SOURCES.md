@@ -1,12 +1,12 @@
 # 来源与致谢（SOURCES）
 
-> 本文件记录 CORE-Human 的真实来源：哪些是本项目原创，哪些借鉴自上游项目，
-> 各上游的许可证是什么、如何核实的。**CORE-Human 不是完全原创**——它是在几个
+> 本文件记录 WKJ-Human 的真实来源：哪些是本项目原创，哪些借鉴自上游项目，
+> 各上游的许可证是什么、如何核实的。**WKJ-Human 不是完全原创**——它是在几个
 > 开源 skill 基础上迭代的产物，本文如实说明边界。
 
 ## 一句话结论
 
-CORE-Human 的**文本表达为独立撰写**（经程序化逐字比对，与上游无成段重合），
+WKJ-Human 的**文本表达为独立撰写**（经程序化逐字比对，与上游无成段重合），
 **核心概念与工作流借鉴自三个开源 skill**，并在真实商业交付中迭代出了上游没有的
 正式材料质检层。发布采用 MIT，同时在本文保留完整致谢与许可说明。
 
@@ -18,7 +18,7 @@ CORE-Human 的**文本表达为独立撰写**（经程序化逐字比对，与�
 - 许可证：MIT（已核实本地副本 LICENSE 文件与 GitHub 仓库页）
 - 借鉴内容（理念层）：AI 痕迹模式库的组织方式——把“不是 X 而是 Y”“意义拔高、
   宣传腔、模糊归因、排比三连”等高频模式作为可检索的信号类别。
-- 未沿用内容：CORE-Human 的信号库（`references/ai-signals.md`）为独立撰写与扩充，
+- 未沿用内容：WKJ-Human 的信号库（`references/ai-signals.md`）为独立撰写与扩充，
   未复制其条目文本；并新增了中文语感信号、正式材料信号两类上游没有的分组。
 - 关系说明：Humanizer-zh 自述基于 blader/humanizer v3.0.0。blader/humanizer 的
   检查脉络可上溯至 Wikipedia "Signs of AI writing"。在此一并致谢。
@@ -29,7 +29,7 @@ CORE-Human 的**文本表达为独立撰写**（经程序化逐字比对，与�
 - 许可证：CC BY-NC 4.0（个人与非商业用途可自由使用，商用需另行授权）
 - 借鉴内容（理念层）：诊断哲学——默认只诊断不改写；“AI 味的本质是过度完美、
   过度均匀、过度光滑”；“去 AI 味不等于内容变好”；按体裁调整判定标准。
-- 未沿用内容：未复制任何文本。上述原则在 CORE-Human 中以独立措辞重写
+- 未沿用内容：未复制任何文本。上述原则在 WKJ-Human 中以独立措辞重写
   （如“默认先审，不先改”“AI 味的强信号是过度均匀，不是单纯书面”）。
   程序化逐字比对（≥8 字连续重合）仅命中一处通用短语（“整体感觉有点 AI”）。
 - 许可说明：**本项目未包含 dbskill 仓库的任何文本**，因此不受其 NC 条款约束。
@@ -51,9 +51,11 @@ CORE-Human 的**文本表达为独立撰写**（经程序化逐字比对，与�
 
 ### 4. 命名说明
 
-“CORE-” 前缀沿用了作者本地 skill 体系的家族命名惯例（该惯例源自 Daniel Miessler
-的 [PAI (Personal AI Infrastructure)](https://github.com/danielmiessler/Personal_AI_Infrastructure)
-的 CORE skill 命名）。CORE-Human 与 PAI 无代码或文本关联。
+本项目的私有前身（2026-06 ~ 09 内部迭代版）名为 **CORE-Human**，“CORE-” 前缀来自作者本地
+skill 体系的家族命名习惯，而该习惯受 Daniel Miessler 的
+[PAI (Personal AI Infrastructure)](https://github.com/danielmiessler/Personal_AI_Infrastructure)
+的 CORE skill 影响。公开发布时（v0.3.1 起）更名为 **WKJ-Human**，改用作者自己的
+skill 家族前缀。WKJ-Human 与 PAI 无代码或文本关联。
 
 ## 借鉴与原创的边界
 
@@ -68,19 +70,19 @@ CORE-Human 的**文本表达为独立撰写**（经程序化逐字比对，与�
 
 ## 核实方法与可复核性
 
-1. **设计记录**：CORE-Human 的设计文档（2026-06-17）明确记录了“整合三个 skill
+1. **设计记录**：WKJ-Human 的设计文档（2026-06-17）明确记录了“整合三个 skill
    的长处”及各自贡献的模块，本文据此归类。
 2. **时间线**：cc-switch 数据库安装记录显示 dbs-ai-check（2026-06-04）、
-   renwei-writing（2026-06-15）、humanizer（2026-05）均先于 CORE-Human 的
+   renwei-writing（2026-06-15）、humanizer（2026-05）均先于 WKJ-Human 的
    设计时间（2026-06-17），佐证设计文档的真实性。
-3. **逐字比对**：以 ≥8 字连续重合为阈值，对 CORE-Human 全部正文与三个上游全文
+3. **逐字比对**：以 ≥8 字连续重合为阈值，对 WKJ-Human 全部正文与三个上游全文
    做程序化 n-gram 扫描，命中仅为本文件所列的通用短语。比对方法简单可复现。
 4. **许可证核实**：三个上游的许可证分别通过本地 LICENSE 文件与 GitHub 仓库页
    双重核对（2026-09-29）。
 
 ## 无法确认的部分
 
-- CORE-Human 设计时参考的 humanizer 具体版本/提交无法精确锚定（本地安装于
+- WKJ-Human 设计时参考的 humanizer 具体版本/提交无法精确锚定（本地安装于
   2026-05，早于设计时间；后续该 skill 有更新）。本文按“当时安装版本”如实说明。
 - 如任何权利人认为本项目存在不当使用，请通过 Issue 联系，我们会尽快处理
   （补充署名、移除内容或调整许可）。

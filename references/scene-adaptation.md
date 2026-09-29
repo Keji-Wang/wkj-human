@@ -1,6 +1,6 @@
-# CORE-Human 场景适配规则
+# WKJ-Human 场景适配规则
 
-`CORE-Human` 不同于通用 humanizer 的地方，在于它必须根据业务场景判断“什么该改，什么别动”。
+`WKJ-Human` 不同于通用 humanizer 的地方，在于它必须根据业务场景判断“什么该改，什么别动”。
 
 ## 一、商业邮件
 

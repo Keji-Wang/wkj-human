@@ -1,8 +1,10 @@
-# CORE-Human
+# WKJ-Human
+
+中文 · **[English](README.en.md)**
 
 **面向商业写作的人味审阅与最小化改写 skill。** 先判断体裁、识别套路化表达，再检查正式材料中的口径与一致性问题，最后才决定要不要动文字——目标不是“洗掉 AI 味”，而是把文本拉回“像一个具体的人在具体场景下说话”。
 
-> **English (brief):** CORE-Human is an Agent Skill for reviewing and minimally rewriting AI-flavored business writing (emails, meeting notes, reports, slide drafts, prompt templates, articles). It reviews first, rewrites last and as little as possible: it distinguishes template-speak from the author's own voice, checks formal documents for numeric/consistency defects, and never invents facts, emotions, or stances. It is an editorial-judgment skill — not an AI detector, and it makes no claim about beating detectors. Written in Chinese; see [SKILL.md](SKILL.md) for the full specification.
+> **English (brief):** WKJ-Human is an Agent Skill for reviewing and minimally rewriting AI-flavored business writing (emails, meeting notes, reports, slide drafts, prompt templates, articles). It reviews first, rewrites last and as little as possible: it distinguishes template-speak from the author's own voice, checks formal documents for numeric/consistency defects, and never invents facts, emotions, or stances. It is an editorial-judgment skill — not an AI detector, and it makes no claim about beating detectors. Written in Chinese; see [SKILL.md](SKILL.md) for the full specification.
 
 ---
 
@@ -42,9 +44,9 @@
 把整个目录放进你的运行时的 skill 目录，例如 Claude Code：
 
 ```bash
-git clone https://github.com/Keji-Wang/core-human.git
+git clone https://github.com/Keji-Wang/wkj-human.git
 mkdir -p ~/.claude/skills
-cp -r core-human ~/.claude/skills/CORE-Human
+cp -r wkj-human ~/.claude/skills/WKJ-Human
 ```
 
 放置后重新启动会话即可。对其他兼容 Agent Skills 约定的运行时（如 Codex 类工具），按该运行时自己的 skill 目录约定放置同样内容即可——**未在某个平台上实测过，就不声称兼容该平台**。
@@ -67,7 +69,7 @@ cp -r core-human ~/.claude/skills/CORE-Human
 
 > 会议围绕组织协同、流程优化与资源配置展开了深入探讨，并在多个关键议题上形成初步共识，为后续工作的高效推进提供了有力支撑。
 
-**CORE-Human 判断（节选）：**
+**WKJ-Human 判断（节选）：**
 
 - “深入探讨”“形成初步共识”“高效推进”“有力支撑”都是纪要常见空话（`AI 自动升华 | 高风险`）
 - 纪要的重点是事实、分歧、未决项，不是升华；没形成明确结论就写“待确认”
@@ -77,7 +79,7 @@ cp -r core-human ~/.claude/skills/CORE-Human
 ## 文件结构
 
 ```
-core-human/
+wkj-human/
 ├── SKILL.md                  # 主规则：定位、工作流、三种输出模式、改写边界
 ├── references/
 │   ├── ai-signals.md         # AI 痕迹信号库（24 类，含保人信号）
@@ -90,6 +92,7 @@ core-human/
 ├── evals/evals.json          # 9 个设计用例（全部虚构材料）
 ├── docs/validation.md        # 验证记录（如实，区分结构检查/试跑/人工评阅）
 ├── SOURCES.md                # 来源核实与致谢（重要）
+├── README.md / README.en.md  # 中英双语说明
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
 └── LICENSE
@@ -97,7 +100,7 @@ core-human/
 
 ## 与上游的关系
 
-CORE-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)（MIT）、
+WKJ-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)（MIT）、
 [dbs-ai-check](https://github.com/dontbesilent2025/dbskill)（CC BY-NC 4.0，仅理念启发）、
 [renwei-writing](https://github.com/orange2ai/renwei-writing)（自定义开源许可）三个开源 skill
 的理念，并在真实商业交付中迭代出自己的差异化层（场景适配 + 正式材料质检）。
@@ -105,7 +108,7 @@ CORE-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/o
 
 ## 验证状态与限制
 
-- 当前版本 **v0.3.0**：结构验证完成 + 执行试跑通过 + 作者自查。**非 1.0，不宣称成熟稳定**，验证细节与局限见 [docs/validation.md](docs/validation.md)。
+- 当前版本 **v0.3.1**：结构验证完成 + 执行试跑通过 + 作者自查。**非 1.0，不宣称成熟稳定**，验证细节与局限见 [docs/validation.md](docs/validation.md)。
 - 规则为中文商业写作调校；英文文本未系统验证。
 - 长文（万字级）下的检查密度未充分验证。
 - 本 skill 按 “as-is” 释出，不承诺支持响应时效，Issue 会看但不保证修复节奏。
@@ -113,3 +116,15 @@ CORE-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/o
 ## License
 
 MIT，见 [LICENSE](LICENSE)。第三方理念的许可边界见 [SOURCES.md](SOURCES.md)。
+
+## 致谢与致敬
+
+这个 skill 不是从零开始的，它站在几个开源项目的肩膀上。向这些作者致以真实的感谢：
+
+- **歸藏（op7418）** 的 [Humanizer-zh](https://github.com/op7418/Humanizer-zh)（MIT）——本项目信号库的组织方式直接受它启发，它也把“AI 写作痕迹”这个话题带进了中文社区。
+- **dontbesilent** 的 [dbs-ai-check](https://github.com/dontbesilent2025/dbskill)（CC BY-NC 4.0）——“默认只诊断不改写”和“AI 味的本质是过度均匀”这两条诊断哲学，塑造了本 skill“先审后改”的骨架。
+- **橘子（Orange）与 Cola** 的 [renwei-writing](https://github.com/orange2ai/renwei-writing)——“毛边先假设是手迹”“改写的上限是隐形”这些保人原则，是本项目最珍视、也最希望传下去的部分。
+- **blader** 的 [humanizer](https://github.com/blader/humanizer)（MIT）与 Wikipedia 的 ["Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)——整个“AI 写作特征”知识脉络的公共源头。
+- **Daniel Miessler** 的 [PAI](https://github.com/danielmiessler/Personal_AI_Infrastructure)——作者本地 skill 体系的组织灵感来源。
+
+开源的意义就在于此：每一层改进都踩在前人公开的思考上。愿这个仓库也能成为下一层肩膀。

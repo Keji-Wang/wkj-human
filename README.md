@@ -159,6 +159,7 @@ WKJ-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/op
 ## 联系
 
 - X（Twitter）：[@JiafuWang](https://x.com/JiafuWang)
+- 邮箱：[keji.dev@outlook.com](mailto:keji.dev@outlook.com)
 - 问题与建议优先走 [Issue](https://github.com/Keji-Wang/wkj-human/issues)
 
 ## License

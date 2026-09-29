@@ -100,6 +100,10 @@ wkj-human/
 
 WKJ-Human is not presented as fully original: it synthesizes ideas from three open-source skills — [Humanizer-zh](https://github.com/op7418/Humanizer-zh) (MIT), [dbs-ai-check](https://github.com/dontbesilent2025/dbskill) (CC BY-NC 4.0, ideas only), and [renwei-writing](https://github.com/orange2ai/renwei-writing) (custom open-source license) — and iterated its own differentiating layers (genre adaptation + formal-document QA) through real client delivery work. The per-item boundary between inspiration and original content, and the license verification process, are documented in [SOURCES.md](SOURCES.md).
 
+## Sister project
+
+A sister project by the same author: [wkj-insight-distiller](https://github.com/Keji-Wang/wkj-insight-distiller) — an Agent Skill that turns interview and meeting material into insight memos; it can serve as upstream material preparation for this skill.
+
 ## Validation status and limitations
 
 - Current version **v0.3.1**: structural verification done, live trials passed, author-reviewed. **Pre-1.0; not claimed to be mature or stable.** Details and limitations in [docs/validation.md](docs/validation.md).

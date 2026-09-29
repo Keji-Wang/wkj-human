@@ -106,6 +106,10 @@ WKJ-Human 不是完全原创：它综合了 [Humanizer-zh](https://github.com/op
 的理念，并在真实商业交付中迭代出自己的差异化层（场景适配 + 正式材料质检）。
 逐项的借鉴/原创边界、许可证核实过程见 [SOURCES.md](SOURCES.md)。
 
+## 姊妹项目
+
+同一作者的姊妹项目：[wkj-insight-distiller](https://github.com/Keji-Wang/wkj-insight-distiller)——访谈/会议材料 → 洞察备忘录的 Agent Skill，可作为本 skill 的上游素材整理。
+
 ## 验证状态与限制
 
 - 当前版本 **v0.3.1**：结构验证完成 + 执行试跑通过 + 作者自查。**非 1.0，不宣称成熟稳定**，验证细节与局限见 [docs/validation.md](docs/validation.md)。

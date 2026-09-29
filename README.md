@@ -1,6 +1,8 @@
 # WKJ-Human
 
-中文 · **[English](README.en.md)**
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+中文 | [English](README.en.md)
 
 **面向商业写作的人味审阅与最小化改写 skill。** 先判断体裁、识别套路化表达，再检查正式材料中的口径与一致性问题，最后才决定要不要动文字——目标不是“洗掉 AI 味”，而是把文本拉回“像一个具体的人在具体场景下说话”。
 

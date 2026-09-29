@@ -1,6 +1,8 @@
 # WKJ-Human
 
-[中文](README.md) · **English**
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
+[中文](README.md) | English
 
 **A skill for human-reviewing and minimally rewriting AI-flavored business writing.** It identifies the genre first, spots templated phrasing, checks formal documents for consistency and caliber issues, and only then decides whether to touch the text at all. The goal is not "washing out the AI flavor" — it is pulling text back to "how a specific person would say this in a specific situation."
 
